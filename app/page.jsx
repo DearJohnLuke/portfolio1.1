@@ -18,7 +18,7 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Jean-Luc Luzemba</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            Frontend Developer passionate about interactive web design and data security. Combining strategy and development, I create digital experiences that blend aesthetics, performance, and protection.
+            Fullstack Developer passionate about interactive web design and data security. Combining strategy and development, I create digital experiences that blend aesthetics, performance, and protection.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -27,7 +27,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/assets/mon-cv.pdf" download>
+                <a href="/assets/CyberCV Jean-Luc Luzemba.pdf" download>
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
                 </a>

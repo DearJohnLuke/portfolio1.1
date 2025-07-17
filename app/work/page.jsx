@@ -36,11 +36,11 @@ const projects = [
     category: "fullstack",
     title: "project 2",
     description:
-      "Welcoming Francophone Community",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "https://robustcode-incorporated.github.io/CFA-Corridor-du-Nord-de-l-Ontario/",
-    github: "https://github.com/RobustCode-Incorporated/CFA-Corridor-du-Nord-de-l-Ontario",
+      "Robust School Management",
+    stack: [{ name: "vue" }, { name: "Dart" }, { name: "Javascript" }],
+    image: "/assets/work/1.jpg",
+    live: "https://youtu.be/b5HQeWyw0Iw?si=WpL1Ec6mo4twJ6_g",
+    github: "https://github.com/RobustCode-Incorporated/ROBUSTSCHOOLMANAGEMENT-APP-v1",
   },
   {
     num: "03",

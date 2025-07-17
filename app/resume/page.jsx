@@ -66,12 +66,12 @@ const experience = {
       duration: "2024 - Present",
     },
     {
-      company: "USAID",
+      company: "United States Agency for International Development",
       position: "Cybersecurity Consultant",
       duration: "2023- 2024",
     },
     {
-      company: "USAID",
+      company: "United States Agency for International Development",
       position: "Support Technician Consultant",
       duration: "Novembre 2022 - 2023",
     },

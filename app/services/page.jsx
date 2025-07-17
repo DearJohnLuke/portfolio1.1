@@ -27,9 +27,9 @@ const services = [
   },
   {
     num: "04",
-    title: "SEO",
+    title: "App development",
     description:
-      "Optimizing your website to rank higher in search engine results, increasing visibility and driving organic traffic to boost your online presence and business growth.",
+      "Building important app for the digitalisation of part of the worrd wich are not fully digitalize yet.",
     href: "https://www.robust-code.com",
   },
 ];
