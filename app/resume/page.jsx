@@ -56,7 +56,7 @@ const about = {
 // experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "Mon Experience",
+  title: "My Experience",
   description:
     "With experience in web development and security management, I create modern, optimized interfaces that blend performance and protection.",
   items: [
