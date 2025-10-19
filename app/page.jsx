@@ -27,7 +27,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/assets/CV Jean-Luc Luzemba Nsianguana.pdf" download>
+                <a href="/assets/CV Jean-Luc Luzemba full october 14th 2025.pdf" download>
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
                 </a>
