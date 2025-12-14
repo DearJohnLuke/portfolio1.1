@@ -33,8 +33,19 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "Fullstack",
     title: "project 2",
+    description:
+      "Digital Administrative Document Wallet — iOS & Android",
+    stack: [{ name: "Node.js" }, { name: "PostgreSQL" }, { name: "Flutter" }],
+    image: "/assets/work/app_logo.png",
+    live: "https://ma-commune-bourgmestre-frontend-c5tqva997-robust-codes-projects.vercel.app",
+    github: "https://github.com/RobustCode-Incorporated/ma-commune-backend",
+  },
+  {
+    num: "03",
+    category: "fullstack",
+    title: "project 3",
     description:
       "Robust School Management",
     stack: [{ name: "vue" }, { name: "Dart" }, { name: "Javascript" }],
@@ -43,9 +54,9 @@ const projects = [
     github: "https://github.com/RobustCode-Incorporated/ROBUSTSCHOOLMANAGEMENT-APP-v1",
   },
   {
-    num: "03",
+    num: "04",
     category: "Backend",
-    title: "project 3",
+    title: "project 4",
     description:
       "E-soko is a digital platform designed to enhance e-commerce by integrating secure payment systems, interactive design, and user-friendly interfaces to provide a seamless shopping experience..",
     stack: [{ name: "Python" }],
