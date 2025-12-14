@@ -38,7 +38,7 @@ const projects = [
     description:
       "Digital Administrative Document Wallet — iOS & Android",
     stack: [{ name: "Node.js" }, { name: "PostgreSQL" }, { name: "Flutter" }],
-    image: "/assets/work/app_logo.png",
+    image: "/assets/work/logo_rdc.png",
     live: "https://ma-commune-bourgmestre-frontend-c5tqva997-robust-codes-projects.vercel.app",
     github: "https://github.com/RobustCode-Incorporated/ma-commune-backend",
   },
