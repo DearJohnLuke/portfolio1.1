@@ -4,8 +4,6 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
-  FaReact,
-  FaFigma,
   FaNodeJs,
   FaGit,
   FaPython,
@@ -36,7 +34,7 @@ const about = {
     },
     {
       fieldName: "Nationality",
-      fieldValue: "world",
+      fieldValue: "Congolais",
     },
     {
       fieldName: "Email",
@@ -48,7 +46,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, French, Portuguese",
+      fieldValue: "French, English,Lingala,Portuguese, ",
     },
   ],
 };
@@ -82,7 +80,7 @@ const experience = {
     },
     {
       company: "The-Way International",
-      position: "Support Technician",
+      position: "Support Technician bénévolat ",
       duration: "2021 - 2022",
     },
     {
