@@ -18,7 +18,7 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Jean-Luc Luzemba</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            Fullstack Developer passionate about interactive web design and data security. Combining strategy and development, I create digital experiences that blend aesthetics, performance, and protection.
+I am a versatile IT professional focused on contributing to collaborative software projects and data-driven teams. I specialize in data analysis, building insights from complex datasets, and supporting decision-making through analytics, while also contributing to fullstack development and secure system design.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
