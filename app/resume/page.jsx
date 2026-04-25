@@ -10,7 +10,6 @@ import {
   FaReact,
   FaPowerbi,
   FaOpenAI,
-  FaPostgreSQL
 } from "react-icons/fa";
 
 
@@ -161,10 +160,6 @@ const skills = {
     {
       icon: <FaGit />,
       name: "GitHub",
-    },
-    {
-      icon: <FaPostgresql />,
-      name: "PostgreSQL",
     },
     {
       icon: <FaOpenai />,
