@@ -10,14 +10,18 @@ const Stats = () => {
     const fetchCommits = async () => {
       try {
         const res = await fetch(
-          "https://api.github.com/repos/RobustCode-Incorporated/data-platform/commits?per_page=100"
+          "https://api.github.com/search/commits?q=repo:RobustCode-Incorporated/data-platform",
+          {
+            headers: {
+              Accept: "application/vnd.github.cloak-preview",
+            },
+          }
         );
 
         const data = await res.json();
 
-        // GitHub renvoie max 100 commits par page
-        // Donc on prend ce qu'on reçoit (suffisant pour portfolio)
-        setCommitCount(data.length);
+        // TOTAL réel des commits du repo
+        setCommitCount(data.total_count || 0);
       } catch (error) {
         console.error("Error fetching commits:", error);
         setCommitCount(0);
