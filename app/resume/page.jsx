@@ -10,6 +10,8 @@ import {
   FaReact
 } from "react-icons/fa";
 import { SiPowerbi } from "react-icons/si";
+import { SiMicrosoft } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
 
 
 // about data
@@ -24,11 +26,11 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+33) 626 419 972",
+      fieldValue: "(+32) 467 613 480",
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldValue: "3+ Years",
     },
     {
       fieldName: "Telegram",
@@ -48,7 +50,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "French, English,Lingala,Portuguese, ",
+      fieldValue: "French, English,Portuguese, Lingala ",
     },
   ],
 };
@@ -157,12 +159,16 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <SiMicrosoft />,
+      name: "Microsoft Office",
     },
     {
       icon: <FaGit />,
       name: "Github",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "Postgresql",
     },
     {
       icon: <FaPython />,
