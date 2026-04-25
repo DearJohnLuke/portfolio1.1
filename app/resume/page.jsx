@@ -7,7 +7,9 @@ import {
   FaNodeJs,
   FaGit,
   FaPython,
+  FaReact
 } from "react-icons/fa";
+import { SiPowerbi } from "react-icons/si";
 
 
 // about data
@@ -147,8 +149,8 @@ const skills = {
       name: "javascript",
     },
     {
-      icon: <FaReact />,
-      name: "react.js",
+      icon: <SiPowerbi />,
+      name: "PowerBi",
     },
     {
       icon: <FaNodeJs />,
