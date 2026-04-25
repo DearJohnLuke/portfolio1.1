@@ -8,8 +8,6 @@ import {
   FaGit,
   FaPython,
   FaReact,
-  FaPowerbi,
-  FaOpenAI,
 } from "react-icons/fa";
 
 
@@ -150,20 +148,12 @@ const skills = {
       name: "JavaScript",
     },
     {
-      icon: <FaPowerbi />,
-      name: "PowerBI",
-    },
-    {
       icon: <FaNodeJs />,
       name: "Node.js",
     },
     {
       icon: <FaGit />,
       name: "GitHub",
-    },
-    {
-      icon: <FaOpenai />,
-      name: "OpenAI",
     },
     {
       icon: <FaPython />,
