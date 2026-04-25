@@ -115,11 +115,11 @@ const education = {
     },
     {
       institution: "Federal University of Paraná",
-      degree: "Certification Computer Science in Portuguese Language",
+      degree: "Certification CS. in Portuguese Language",
     },
     {
       institution: "Federal University of Parana",
-      degree: "Bachelor’s in Computer Science unachieve",
+      degree: "Computer Science unachieve",
     },
     {
       institution: "Salesian Catholic Contracted",
