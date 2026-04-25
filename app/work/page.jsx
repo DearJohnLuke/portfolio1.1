@@ -22,30 +22,19 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Fullstack",
     title: "project 1",
     description:
-      "Barber& Tatto shop Hag-Ink",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "https://www.hag-ink.com/",
-    github: "https://github.com/RobustCode-Incorporated/Hag-Ink",
-  },
-  {
-    num: "02",
-    category: "Fullstack",
-    title: "project 2",
-    description:
-      "Digital Administrative Document Wallet — iOS & Android",
+      "e-services Cd a Digital Administrative Document Wallet — iOS & Android",
     stack: [{ name: "Node.js" }, { name: "PostgreSQL" }, { name: "Flutter" }],
     image: "/assets/work/logo_rdc.png",
     live: "https://ma-commune-bourgmestre-frontend-c5tqva997-robust-codes-projects.vercel.app",
     github: "https://github.com/RobustCode-Incorporated/ma-commune-backend",
   },
   {
-    num: "03",
-    category: "fullstack",
-    title: "project 3",
+    num: "02",
+    category: "Fullstack",
+    title: "project 2",
     description:
       "Robust School Management",
     stack: [{ name: "vue" }, { name: "Dart" }, { name: "Javascript" }],
@@ -54,15 +43,37 @@ const projects = [
     github: "https://github.com/RobustCode-Incorporated/ROBUSTSCHOOLMANAGEMENT-APP-v1",
   },
   {
-    num: "04",
-    category: "Backend",
-    title: "project 4",
+    num: "03",
+    category: "Frontend",
+    title: "project 3",
     description:
-      "E-soko is a digital platform designed to enhance e-commerce by integrating secure payment systems, interactive design, and user-friendly interfaces to provide a seamless shopping experience..",
-    stack: [{ name: "Python" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "https://github.com/code50/168122935/tree/main/e_soko_project",
+      "Barber& Tatto shop Hag-Ink",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    image: "/assets/work/thumb1.png",
+    live: "https://www.hag-ink.com/",
+    github: "https://github.com/RobustCode-Incorporated/Hag-Ink",
+  },
+  {
+    num: "04",
+    category: "Data Analytics, Data Engineering",
+    title: "Project 4",
+    description:
+      "End-to-end data engineering and analytics project simulating digital wallet adoption in Kinshasa by building ETL pipelines, analyzing real-world datasets (e.g. GSMA data), and developing predictive models and KPIs to forecast user growth and support data-driven decision-making.",
+    stack: [{ name: "Python" }, { name: "PowerBi" }, { name: "PostgreSQL" }],
+    image: "/assets/work/logo_rdc.jpg",
+    live: "https://github.com/RobustCode-Incorporated/data-platform-Kinshasa-",
+    github: "https://github.com/RobustCode-Incorporated/data-platform-Kinshasa-",
+  },
+  {
+    num: "04",
+    category: "Data Engineering",
+    title: "project 5",
+    description:
+      "Data engineering project simulating digital wallet adoption in Europe (with a focus on Belgium), building scalable data pipelines and analytical models to evaluate market fit, adoption scenarios, and potential industry verticals for SaaS commercialization and go-to-market strategy.",
+    stack: [{ name: "JavaScript" }],
+    image: "/assets/work/1.png",
+    live: "https://github.com/RobustCode-Incorporated/data-platform",
+    github: "https://github.com/RobustCode-Incorporated/data-platform",
   },
 ];
 
