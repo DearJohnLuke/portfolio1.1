@@ -20,7 +20,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+33) 626 419 972",
+    description: "(+32) 467 613 480",
   },
   {
     icon: <FaEnvelope />,
@@ -30,7 +30,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "9 rue Jules Vallès 90100 Evry-courcouronnes, Essonnes, France",
+    description: "28, Boulevard d'ypres, 1000 Brussels, Belgique ",
   },
 ];
 
