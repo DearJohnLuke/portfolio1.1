@@ -9,10 +9,10 @@ import {
   FaPython,
   FaReact
 } from "react-icons/fa";
-import { SiPowerbi } from "react-icons/si";
-import { SiMicrosoft } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
-import { SiOpenai } from "react-icons/si";
+import SiPowerbi from "react-icons/si/SiPowerbi";
+import SiMicrosoft from "react-icons/si/SiMicrosoft";
+import SiPostgresql from "react-icons/si/SiPostgresql";
+import SiOpenai from "react-icons/si/SiOpenai";
 
 
 // about data
@@ -141,39 +141,39 @@ const skills = {
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML5",
     },
     {
       icon: <FaCss3 />,
-      name: "css 3",
+      name: "CSS3",
     },
     {
       icon: <FaJs />,
-      name: "javascript",
+      name: "JavaScript",
     },
     {
       icon: <SiPowerbi />,
-      name: "PowerBi",
+      name: "PowerBI",
     },
     {
       icon: <FaNodeJs />,
-      name: "node.js",
+      name: "Node.js",
     },
     {
       icon: <SiMicrosoft />,
-      name: "Microsoft Office",
+      name: "MICROSOFT OFFICE",
     },
     {
       icon: <FaGit />,
-      name: "Github",
+      name: "GitHub",
     },
     {
       icon: <SiPostgresql />,
-      name: "Postgresql",
+      name: "PostgreSQL",
     },
     {
       icon: <SiOpenai />,
-      name: "Openai",
+      name: "OpenAI",
     },
     {
       icon: <FaPython />,
