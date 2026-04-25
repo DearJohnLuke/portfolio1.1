@@ -6,30 +6,30 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "IT Project Management (CIT Projects)",
     description:
-      "Crafting responsive and high-performance websites tailored to meet your business needs, ensuring a seamless user experience and functionality.",
+      "Planning, coordinating, and delivering IT projects with focus on efficiency, scalability, and stakeholder alignment.",
     href: "https://www.robust-code.com",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Data Analytics & Business Intelligence",
     description:
-      "Designing intuitive and visually engaging user interfaces that prioritize user experience, ensuring your digital product is both attractive and easy to navigate.",
+      "Transforming raw data into actionable insights using SQL, Power BI, and data modeling techniques to support decision-making.",
     href: "https://www.robust-code.com",
   },
   {
     num: "03",
-    title: "Cybersecurity",
+    title: "Cybersecurity & Risk Analysis",
     description:
-      "Providing robust security solutions to protect your digital assets, safeguard sensitive data, and ensure your online presence is secure against evolving threats.",
+      "Identifying vulnerabilities, securing systems, and applying cybersecurity best practices to protect digital infrastructures.",
     href: "https://www.robust-code.com",
   },
   {
     num: "04",
-    title: "App development",
+    title: "Mobile & Web Application Development",
     description:
-      "Building important app for the digitalisation of part of the worrd wich are not fully digitalize yet.",
+      "Designing and developing scalable web and mobile applications focused on performance, usability, and modern architectures.",
     href: "https://www.robust-code.com",
   },
 ];
