@@ -10,7 +10,7 @@ import {
   FaReact,
   FaPowerbi,
   FaOpenAI,
-  FaPostgreSQL,
+  FaPostgreSQL
 } from "react-icons/fa";
 
 
