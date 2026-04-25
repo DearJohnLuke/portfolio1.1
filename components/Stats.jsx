@@ -1,55 +1,27 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
+const stats = [
+  {
+    num: 5,
+    text: "Years of experience",
+  },
+  {
+    num: 13,
+    text: "Projects completed",
+  },
+  {
+    num: 8,
+    text: "Technologies mastered",
+  },
+  {
+    num: 1427,
+    text: "Code commits",
+  },
+];
+
 const Stats = () => {
-  const [commitCount, setCommitCount] = useState(0);
-
-  useEffect(() => {
-    const fetchCommits = async () => {
-      try {
-        const res = await fetch(
-          "https://api.github.com/search/commits?q=repo:RobustCode-Incorporated/data-platform",
-          {
-            headers: {
-              Accept: "application/vnd.github.cloak-preview",
-            },
-          }
-        );
-
-        const data = await res.json();
-
-        // TOTAL réel des commits du repo
-        setCommitCount(data.total_count || 0);
-      } catch (error) {
-        console.error("Error fetching commits:", error);
-        setCommitCount(0);
-      }
-    };
-
-    fetchCommits();
-  }, []);
-
-  const stats = [
-    {
-      num: 5,
-      text: "Years of experience",
-    },
-    {
-      num: 13,
-      text: "Projects completed",
-    },
-    {
-      num: 8,
-      text: "Technologies mastered",
-    },
-    {
-      num: commitCount,
-      text: "GitHub commits",
-    },
-  ];
-
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
@@ -62,15 +34,13 @@ const Stats = () => {
               >
                 <CountUp
                   end={item.num}
-                  duration={3}
-                  delay={0.5}
+                  duration={5}
+                  delay={2}
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
                 <p
                   className={`${
-                    item.text.length < 15
-                      ? "max-w-[100px]"
-                      : "max-w-[150px]"
+                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
                   } leading-snug text-white/80`}
                 >
                   {item.text}
