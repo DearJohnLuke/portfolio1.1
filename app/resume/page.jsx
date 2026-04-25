@@ -9,10 +9,10 @@ import {
   FaPython,
   FaReact
 } from "react-icons/fa";
-import SiPowerbi from "react-icons/si/SiPowerbi";
-import SiMicrosoft from "react-icons/si/SiMicrosoft";
-import SiPostgresql from "react-icons/si/SiPostgresql";
-import SiOpenai from "react-icons/si/SiOpenai";
+import { SiPowerbi } from "react-icons/si";
+import { SiMicrosoft } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiOpenai } from "react-icons/si";
 
 
 // about data
