@@ -60,18 +60,18 @@ const projects = [
     description:
       "End-to-end data engineering and analytics project simulating digital wallet adoption in Kinshasa by building ETL pipelines, analyzing real-world datasets (e.g. GSMA data), and developing predictive models and KPIs to forecast user growth and support data-driven decision-making.",
     stack: [{ name: "Python" }, { name: "PowerBi" }, { name: "PostgreSQL" }],
-    image: "/assets/work/logo_rdc.jpg",
+    image: "/assets/work/logo_rdc.png",
     live: "https://github.com/RobustCode-Incorporated/data-platform-Kinshasa-",
     github: "https://github.com/RobustCode-Incorporated/data-platform-Kinshasa-",
   },
   {
-    num: "04",
+    num: "05",
     category: "Data Engineering",
     title: "project 5",
     description:
       "Data engineering project simulating digital wallet adoption in Europe (with a focus on Belgium), building scalable data pipelines and analytical models to evaluate market fit, adoption scenarios, and potential industry verticals for SaaS commercialization and go-to-market strategy.",
     stack: [{ name: "JavaScript" }],
-    image: "/assets/work/1.png",
+    image: "/assets/work/1.jpg",
     live: "https://github.com/RobustCode-Incorporated/data-platform",
     github: "https://github.com/RobustCode-Incorporated/data-platform",
   },
