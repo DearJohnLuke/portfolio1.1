@@ -12,6 +12,7 @@ import {
 import { SiPowerbi } from "react-icons/si";
 import { SiMicrosoft } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
+import { SiOpenai } from "react-icons/si";
 
 
 // about data
@@ -60,11 +61,11 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "With experience in web development and security management, I create modern, optimized interfaces that blend performance and protection.",
+    "With experience in web development and security & data management, I create modern, optimized interfaces that blend performance and protection.",
   items: [
     {
-      company: "ROBUST CODE SARL.",
-      position: "Frontend Developer & Python Programmer",
+      company: "ROBUST CODE SARL. As a entrepeneur",
+      position: "Fullstack Developer & Python Programmer",
       duration: "2024 - Present",
     },
     {
@@ -88,7 +89,7 @@ const experience = {
       duration: "2021 - 2022",
     },
     {
-      company: "FreeLance",
+      company: "FreeLance & Benevolat",
       position: "Web Developer, Social media Manager",
       duration: "2020 - 2021",
     },
@@ -118,11 +119,11 @@ const education = {
     },
     {
       institution: "Federal University of Paraná",
-      degree: "Certification in Portuguese Language",
+      degree: "Certification Computer Science in Portuguese Language",
     },
     {
-      institution: "",
-      degree: "Bachelor’s in Business Administration",
+      institution: "Federal University of Parana",
+      degree: "Bachelor’s in Computer Science unachieve",
     },
     {
       institution: "Salesian Catholic Contracted",
@@ -136,7 +137,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Passionate about tech, I combine cybersecurity, web development, and Python programming.",
+    "Passionate about tech, I combine cybersecurity, web & Mobile development, automation, data engeneering, data analytics and AI.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -169,6 +170,10 @@ const skills = {
     {
       icon: <SiPostgresql />,
       name: "Postgresql",
+    },
+    {
+      icon: <SiOpenai />,
+      name: "Openai",
     },
     {
       icon: <FaPython />,
