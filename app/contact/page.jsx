@@ -25,7 +25,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "jeanlucluzemba@robust-code.com",
+    description: "luzembajean-luc@outlook.com",
   },
   {
     icon: <FaMapMarkerAlt />,
@@ -70,8 +70,8 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
+                    <SelectItem value="est">IT Project</SelectItem>
+                    <SelectItem value="cst">Data Analyst</SelectItem>
                     <SelectItem value="mst">Cybersecurity</SelectItem>
                   </SelectGroup>
                 </SelectContent>
