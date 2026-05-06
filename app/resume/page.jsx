@@ -39,7 +39,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "jeanlucluzemba@robust-code.com",
+      fieldValue: "luzembajean-luc@outlook.com",
     },
     {
       fieldName: "Freelance",
@@ -61,7 +61,7 @@ const experience = {
   items: [
     {
       company: "ROBUST CODE SARL. As a entrepeneur",
-      position: "Fullstack Developer & Python Programmer",
+      position: "Fullstack Developer product oriented",
       duration: "2024 - Present",
     },
     {
