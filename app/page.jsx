@@ -30,7 +30,7 @@ organizations, and public administrations.
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/assets/CV Jean-Luc Luzemba full october 14th 2025.pdf" download>
+                <a href="/assets/cv Jean-Luc Luzemba for my 30 years in earth.pdf" download>
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
                 </a>
