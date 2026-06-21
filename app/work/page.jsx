@@ -82,7 +82,7 @@ const projects = [
     description:
       "Robust Enterprise Management: SaaS platform for wholesalers and multi-sector SMEs Inventory management, invoicing, reseller coordination, and business operations unified within a single system .",
     stack: [{ name: "typeScript" }, { name: "Dart" }, { name: "python" }, { name: "Node.js" }, { name: "Vue.js" }],
-    image: "/assets/work/1.jpg",
+    image: "/assets/work/REM Dashboard.png",
     live: "https://rem-core-frontend.vercel.app/",
     github: "https://github.com/RobustCode-Incorporated/Robust-Enterprise-Management",
   },
