@@ -71,7 +71,7 @@ const projects = [
     description:
       "Data engineering project simulating digital wallet adoption in Europe (with a focus on Belgium), building scalable data pipelines and analytical models to evaluate market fit, adoption scenarios, and potential industry verticals for SaaS commercialization and go-to-market strategy.",
     stack: [{ name: "JavaScript" }],
-    image: "/assets/work/1.jpg",
+    image: "/assets/work/data engenering project 1.png",
     live: "https://github.com/RobustCode-Incorporated/data-platform",
     github: "https://github.com/RobustCode-Incorporated/data-platform",
   },
