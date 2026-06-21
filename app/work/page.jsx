@@ -27,7 +27,7 @@ const projects = [
     description:
       "e-services Cd a Digital Administrative Document Wallet — iOS & Android",
     stack: [{ name: "Node.js" }, { name: "PostgreSQL" }, { name: "Flutter" }],
-    image: "/assets/work/logo_rdc.png",
+    image: "/assets/work/e-services app .png",
     live: "https://ma-commune-bourgmestre-frontend-c5tqva997-robust-codes-projects.vercel.app",
     github: "https://github.com/RobustCode-Incorporated/ma-commune-backend",
   },
