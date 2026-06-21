@@ -75,6 +75,17 @@ const projects = [
     live: "https://github.com/RobustCode-Incorporated/data-platform",
     github: "https://github.com/RobustCode-Incorporated/data-platform",
   },
+  {
+    num: "06",
+    category: "Fullstack",
+    title: "project 6",
+    description:
+      "Robust Enterprise Management: SaaS platform for wholesalers and multi-sector SMEs Inventory management, invoicing, reseller coordination, and business operations unified within a single system .",
+    stack: [{ name: "typeScript" }, { name: "Dart" }, { name: "python" }, { name: "Node.js" }, { name: "Vue.js" }],
+    image: "/assets/work/1.jpg",
+    live: "https://rem-core-frontend.vercel.app/",
+    github: "https://github.com/RobustCode-Incorporated/Robust-Enterprise-Management",
+  },
 ];
 
 const Work = () => {
