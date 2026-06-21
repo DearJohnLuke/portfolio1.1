@@ -15,7 +15,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "I’m a versatile developer with expertise in web development, cybersecurity, and Python, delivering secure and high-performance solutions.",
+    "I design, develop, and deploy end-to-end digital systems combining software engineering, cloud architecture, and business strategy to deliver production-ready solutions and SaaS products.",
   info: [
     {
       fieldName: "Name",
@@ -27,7 +27,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "3+ Years",
+      fieldValue: "5+ Years",
     },
     {
       fieldName: "Telegram",
@@ -42,12 +42,12 @@ const about = {
       fieldValue: "luzembajean-luc@outlook.com",
     },
     {
-      fieldName: "Freelance",
+      fieldName: "consultant contract",
       fieldValue: "Available",
     },
     {
       fieldName: "Languages",
-      fieldValue: "French, English,Portuguese, Lingala ",
+      fieldValue: "French, English,Portuguese",
     },
   ],
 };
@@ -61,7 +61,7 @@ const experience = {
   items: [
     {
       company: "ROBUST CODE SARL. As a entrepeneur",
-      position: "Fullstack Developer product oriented",
+      position: "Founder & Digital Systems Architect",
       duration: "2024 - Present",
     },
     {
@@ -72,16 +72,16 @@ const experience = {
     {
       company: "United States Agency for International Development",
       position: "Support Technician Consultant",
-      duration: "Novembre 2022 - 2023",
+      duration: "November 2022 - 2023",
     },
     {
       company: "National Social Security Fund",
       position: "Intern",
-      duration: "Juin 2022",
+      duration: "June 2022",
     },
     {
       company: "The-Way International",
-      position: "Support Technician bénévolat ",
+      position: "Support Technician",
       duration: "2021 - 2022",
     },
     {
@@ -123,7 +123,7 @@ const education = {
     },
     {
       institution: "Salesian Catholic Contracted",
-      degree: "Bac",
+      degree: "CESS",
       duration: "2016",
     },
   ],
