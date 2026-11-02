@@ -6,8 +6,8 @@ PHOTO = str((pathlib.Path(__file__).parent / "../public/assets/photo.png").resol
 SITE = "https://jeanluc-luzemba.vercel.app"
 
 CONTACT = {
-    "fr": ["+32 467 613 480", "jeanlucluzemba@robust-code.com", "Bruxelles, Belgique", SITE.replace("https://", "")],
-    "en": ["+32 467 613 480", "jeanlucluzemba@robust-code.com", "Brussels, Belgium", SITE.replace("https://", "")],
+    "fr": ["+32 467 613 480", "luzembajean-luc@outlook.com", "Bruxelles, Belgique", SITE.replace("https://", "")],
+    "en": ["+32 467 613 480", "luzembajean-luc@outlook.com", "Brussels, Belgium", SITE.replace("https://", "")],
 }
 ICONS = ["☎", "✉", "⌖", "⊕"]
 

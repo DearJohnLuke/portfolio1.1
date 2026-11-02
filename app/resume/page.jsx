@@ -56,7 +56,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "jeanlucluzemba@robust-code.com",
+      fieldValue: "luzembajean-luc@outlook.com",
     },
     {
       fieldName: "consultant contract",
