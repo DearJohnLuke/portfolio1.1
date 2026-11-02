@@ -48,6 +48,7 @@ const RoundBtn = ({ href, label, onClick, children }) => {
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+  const [swiper, setSwiper] = useState(null);
   const videos = useRef([]);
 
   const handleSlideChange = (swiper) => {
@@ -146,13 +147,30 @@ const Work = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="!pb-[64px] mb-8"
+              onSwiper={setSwiper}
               onSlideChange={handleSlideChange}
             >
               {projects.map((item, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    {/* badges sit above the media so they never hide part of it */}
+                    <div className="flex items-center justify-between gap-2 mb-3 min-h-[26px]">
+                      {!item.github ? (
+                        <span className="flex items-center gap-2 bg-[#232329] text-white/80 text-xs uppercase tracking-widest px-3 py-1 rounded-full">
+                          <BsLockFill className="text-accent" /> Private repo
+                        </span>
+                      ) : (
+                        <span />
+                      )}
+                      {item.video && (
+                        <span className="bg-accent text-primary text-xs uppercase tracking-widest px-3 py-1 rounded-full">
+                          Demo video
+                        </span>
+                      )}
+                    </div>
+                    {/* 16:9 box: the demo videos are 1280x720, so they show whole on every screen */}
+                    <div className="w-full aspect-video relative flex justify-center items-center bg-black overflow-hidden">
                       {item.video ? (
                         <video
                           ref={(el) => (videos.current[index] = el)}
@@ -161,33 +179,16 @@ const Work = () => {
                           controls
                           playsInline
                           preload="none"
-                          className="w-full h-full object-cover bg-black"
+                          className="w-full h-full object-contain bg-black"
                         />
                       ) : (
-                        <>
-                          {/* overlay */}
-                          <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                          {/* image */}
-                          <div className="relative w-full h-full">
-                            <Image
-                              src={item.image}
-                              fill
-                              sizes="(min-width: 1200px) 50vw, 100vw"
-                              className="object-cover object-top"
-                              alt={`${item.title} screenshot`}
-                            />
-                          </div>
-                        </>
-                      )}
-                      {!item.github && (
-                        <span className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-primary/90 text-white/80 text-xs uppercase tracking-widest px-3 py-1 rounded-full">
-                          <BsLockFill className="text-accent" /> Private repo
-                        </span>
-                      )}
-                      {item.video && (
-                        <span className="absolute top-4 right-4 z-20 bg-accent text-primary text-xs uppercase tracking-widest px-3 py-1 rounded-full">
-                          Demo video
-                        </span>
+                        <Image
+                          src={item.image}
+                          fill
+                          sizes="(min-width: 1200px) 50vw, 100vw"
+                          className="object-contain"
+                          alt={`${item.title} screenshot`}
+                        />
                       )}
                     </div>
                   </SwiperSlide>
@@ -195,11 +196,33 @@ const Work = () => {
               })}
               {/* slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                containerStyles="flex gap-2 absolute right-0 bottom-0 z-20 w-max"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
           </div>
+        </div>
+
+        {/* project index: every project one tap away */}
+        <div className="mt-4 xl:mt-8">
+          <p className="uppercase text-sm tracking-widest text-white/40 mb-3 text-center xl:text-left">
+            All projects
+          </p>
+          <ul className="flex flex-wrap gap-2 justify-center xl:justify-start">
+            {projects.map((item, index) => (
+              <li key={index}>
+                <button
+                  onClick={() => swiper && swiper.slideTo(index)}
+                  className={`${
+                    item === project ? "bg-accent text-primary" : "bg-[#232329] text-white/80 hover:text-accent"
+                  } text-sm px-4 py-2 rounded-full transition-all`}
+                >
+                  {item.num} · {item.short}
+                  {item.video && " ▶"}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* archive */}
