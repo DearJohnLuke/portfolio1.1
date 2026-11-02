@@ -13,15 +13,14 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Entrepreneurial Technologist | Digital Systems Architect</span>
+            <span className="text-xl">AI Engineer | Digital Systems Architect</span>
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Jean-Luc Luzemba</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-Entrepreneurial Technologist and Digital Systems
-Architect specializing in transforming complex ideas
-into scalable operational platforms for enterprises,
-organizations, and public administrations.
+I build LLM agents, GenAI pipelines and SaaS platforms
+and take them to production: specified first, tested,
+deployed and used by real clients in Belgium and DR Congo.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -30,7 +29,7 @@ organizations, and public administrations.
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/assets/cv Jean-Luc Luzemba for my 30 years in earth.pdf" download>
+                <a href="/assets/CV-Jean-Luc-Luzemba-2026-11.pdf" download>
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
                 </a>

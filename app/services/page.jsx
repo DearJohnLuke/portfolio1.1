@@ -6,27 +6,34 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
+    title: "AI Agents & GenAI Engineering",
+    description:
+      "LLM agents and AI pipelines (speech, video, documents, decisions) built into your systems, with guardrails, human approval and automated tests.",
+    href: "https://www.robust-code.com",
+  },
+  {
+    num: "02",
     title: "IT Project Management (CIT Projects)",
     description:
       "Planning, coordinating, and delivering IT projects with focus on efficiency, scalability, and stakeholder alignment.",
     href: "https://www.robust-code.com",
   },
   {
-    num: "02",
+    num: "03",
     title: "Data Analytics & Business Intelligence",
     description:
       "Transforming raw data into actionable insights using SQL, Power BI, and data modeling techniques to support decision-making.",
     href: "https://www.robust-code.com",
   },
   {
-    num: "03",
+    num: "04",
     title: "Cybersecurity & Risk Analysis",
     description:
       "Identifying vulnerabilities, securing systems, and applying cybersecurity best practices to protect digital infrastructures.",
     href: "https://www.robust-code.com",
   },
   {
-    num: "04",
+    num: "05",
     title: "Mobile & Web Application Development",
     description:
       "Designing and developing scalable web and mobile applications focused on performance, usability, and modern architectures.",

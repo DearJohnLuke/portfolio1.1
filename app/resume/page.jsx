@@ -9,13 +9,30 @@ import {
   FaPython,
   FaReact,
 } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiVuedotjs,
+  SiNextdotjs,
+  SiPostgresql,
+  SiDocker,
+  SiFastify,
+  SiFlutter,
+  SiAnthropic,
+  SiFfmpeg,
+  SiStripe,
+  SiVercel,
+  SiSpringboot,
+  SiSwift,
+  SiNestjs,
+  SiPrisma,
+} from "react-icons/si";
 
 
 // about data
 const about = {
   title: "About me",
   description:
-    "I design, develop, and deploy end-to-end digital systems combining software engineering, cloud architecture, and business strategy to deliver production-ready solutions and SaaS products.",
+    "I design, build and ship production systems end to end: LLM agents and GenAI pipelines, TypeScript/Python backends, PostgreSQL data models, web and mobile apps, cloud deployment and CI/CD. Every project is specified first and proven with automated tests.",
   info: [
     {
       fieldName: "Name",
@@ -39,7 +56,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "luzembajean-luc@outlook.com",
+      fieldValue: "jeanlucluzemba@robust-code.com",
     },
     {
       fieldName: "consultant contract",
@@ -47,7 +64,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "French, English,Portuguese",
+      fieldValue: "French, English, Portuguese",
     },
   ],
 };
@@ -57,11 +74,11 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "With experience in web development and security & data management, I create modern, optimized interfaces that blend performance and protection.",
+    "Since 2024 I run Robust Code, where we ship AI agents, SaaS products and client platforms to production. Before that: ICT, cybersecurity and support roles in international organisations.",
   items: [
     {
-      company: "ROBUST CODE SARL. As a entrepeneur",
-      position: "Founder & Digital Systems Architect",
+      company: "Robust Code SARL — LLM agents, GenAI pipelines, SaaS",
+      position: "Founder & AI / Digital Systems Engineer",
       duration: "2024 - Present",
     },
     {
@@ -133,32 +150,30 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Passionate about tech, I combine cybersecurity, web & Mobile development, automation, data engeneering, data analytics and AI.",
+    "LLM agents and GenAI pipelines (Claude API, Whisper, FFmpeg), TypeScript and Python backends, PostgreSQL, web and mobile, Docker, CI/CD and cloud deployment.",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "HTML5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "CSS3",
-    },
-    {
-      icon: <FaJs />,
-      name: "JavaScript",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
-      icon: <FaGit />,
-      name: "GitHub",
-    },
-    {
-      icon: <FaPython />,
-      name: "Python",
-    },
+    { icon: <SiAnthropic />, name: "LLM agents (Claude API)" },
+    { icon: <FaPython />, name: "Python" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <SiFastify />, name: "Fastify / Hono" },
+    { icon: <SiNestjs />, name: "NestJS" },
+    { icon: <SiSpringboot />, name: "Java / Spring Boot" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiPrisma />, name: "Prisma / Drizzle ORM" },
+    { icon: <SiVuedotjs />, name: "Vue 3" },
+    { icon: <FaReact />, name: "React" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <SiFlutter />, name: "Flutter" },
+    { icon: <SiSwift />, name: "Swift" },
+    { icon: <SiFfmpeg />, name: "FFmpeg (video pipelines)" },
+    { icon: <SiDocker />, name: "Docker" },
+    { icon: <SiVercel />, name: "Vercel / Render / Neon" },
+    { icon: <SiStripe />, name: "Stripe" },
+    { icon: <FaGit />, name: "Git / GitHub Actions" },
+    { icon: <FaJs />, name: "JavaScript" },
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3 />, name: "CSS3" },
   ],
 };
 

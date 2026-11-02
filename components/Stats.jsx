@@ -1,6 +1,7 @@
 "use client";
 
 import CountUp from "react-countup";
+import { projects, archive } from "@/lib/projects";
 
 const stats = [
   {
@@ -8,12 +9,12 @@ const stats = [
     text: "Years of experience",
   },
   {
-    num: 17,
-    text: "Projects completed",
+    num: projects.length + archive.length,
+    text: "Projects shipped",
   },
   {
-    num: 8,
-    text: "Technologies mastered",
+    num: 22,
+    text: "Technologies in production",
   },
   {
     num: 1705,
