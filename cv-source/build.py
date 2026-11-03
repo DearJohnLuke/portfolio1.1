@@ -59,8 +59,9 @@ T = {
   tools_h="Outils",
   tools="Git • GitHub • GitHub Actions • VS Code • Claude Code • Xcode • Postman • Swagger / OpenAPI • Docker • Vercel • Neon • Render • Stripe • Playwright • Jira • Notion • Miro",
   lang_h="Langues", langs="Français, anglais, portugais",
-  ref_h="Référence",
-  ref=("Donatien Pandikuziku", "Project Manager USAID (FEWS NET)", "Contact sur demande"),
+  ref_h="Références",
+  ref=[("Donatien Pandikuziku", "Project Manager USAID (FEWS NET)", "Contact sur demande"),
+       ("Sebastien De Beauffort", "+32 470 35 74 35")],
   proj_h="Projets récents — preuves",
   proj_note="Vidéos de démo et captures : " + SITE.replace("https://", "") + "/work",
   fews_role="Consultant ICT & transformation numérique",
@@ -127,8 +128,9 @@ T = {
   tools_h="Tools",
   tools="Git • GitHub • GitHub Actions • VS Code • Claude Code • Xcode • Postman • Swagger / OpenAPI • Docker • Vercel • Neon • Render • Stripe • Playwright • Jira • Notion • Miro",
   lang_h="Languages", langs="French, English, Portuguese",
-  ref_h="Reference",
-  ref=("Donatien Pandikuziku", "Project Manager USAID (FEWS NET)", "Contact on demand"),
+  ref_h="References",
+  ref=[("Donatien Pandikuziku", "Project Manager USAID (FEWS NET)", "Contact on demand"),
+       ("Sebastien De Beauffort", "+32 470 35 74 35")],
   proj_h="Recent projects — proof",
   proj_note="Demo videos and screenshots: " + SITE.replace("https://", "") + "/work",
   fews_role="ICT & Digital Transformation Consultant",
@@ -221,7 +223,7 @@ def page2(lang):
         n = name.split("|")[0 if lang == "fr" else -1]
         projs += f'<div class="pj"><p class="pn">{e(n)}</p><p class="ps">{e(stack)}</p><p class="pp">{e(pfr if lang == "fr" else pen)}</p></div>'
     edu = "".join(f'<li><b>{e(a)}</b><br><span>{e(b)}</span></li>' for a, b in t["edu"])
-    r = t["ref"]
+    refs = "".join('<p class="tools ref"><b>' + e(r[0]) + '</b>' + "".join('<br>' + e(x) for x in r[1:]) + '</p>' for r in t["ref"])
     return f"""
 <section class="page">
   <aside>
@@ -233,7 +235,7 @@ def page2(lang):
       <h2 class="sh">{e(t['lang_h'])}</h2>
       <p class="tools">{e(t['langs'])}</p>
       <h2 class="sh">{e(t['ref_h'])}</h2>
-      <p class="tools"><b>{e(r[0])}</b><br>{e(r[1])}<br>{e(r[2])}</p>
+      {refs}
     </div>
     <div class="qr">{qr}</div>
   </aside>
@@ -263,6 +265,7 @@ aside { width: 38.5%; background: #000; color: #fff; display: flex; flex-directi
 .photo img { width: 74mm; height: 74mm; object-fit: cover; object-position: top; border-radius: 0 0 50% 50%; }
 .side { padding: 5mm 6mm 0 6mm; font-size: 8pt; line-height: 1.42; font-weight: 300; }
 .side.full { padding-top: 8mm; flex: 1; }
+.ref + .ref { margin-top: 1.6mm; }
 .contact { list-style: none; margin-bottom: 3mm; }
 .contact li { margin-bottom: 1.6mm; font-size: 7.8pt; }
 .contact .ic { display: inline-block; width: 5mm; }
