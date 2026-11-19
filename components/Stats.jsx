@@ -1,28 +1,42 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import CountUp from "react-countup";
-import { projects, archive } from "@/lib/projects";
 
-const stats = [
-  {
-    num: 7,
-    text: "Years of experience",
-  },
-  {
-    num: projects.length + archive.length,
-    text: "Projects shipped",
-  },
-  {
-    num: 22,
-    text: "Technologies in production",
-  },
-  {
-    num: 1705,
-    text: "Code commits",
-  },
-];
+// Last known figures, shown only if GitHub cannot be reached.
+const FALLBACK = { commits: 1705, projects: 45 };
+const POLL_MS = 60_000;
 
-const Stats = () => {
+const Stats = ({ initial }) => {
+  const [gh, setGh] = useState(initial || FALLBACK);
+
+  // Live: re-read the totals every minute while the page is open.
+  useEffect(() => {
+    let alive = true;
+    const load = async () => {
+      if (document.hidden) return;
+      try {
+        const res = await fetch("/api/github-stats", { cache: "no-store" });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (alive && data.commits) setGh({ commits: data.commits, projects: data.projects });
+      } catch {}
+    };
+    load();
+    const id = setInterval(load, POLL_MS);
+    return () => {
+      alive = false;
+      clearInterval(id);
+    };
+  }, []);
+
+  const stats = [
+    { num: 7, text: "Years of experience" },
+    { num: gh.projects, text: "GitHub projects", live: true },
+    { num: 22, text: "Technologies in production" },
+    { num: gh.commits, text: "Code commits", live: true },
+  ];
+
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
@@ -37,6 +51,8 @@ const Stats = () => {
                   end={item.num}
                   duration={5}
                   delay={2}
+                  preserveValue
+                  separator=" "
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
                 <p
@@ -45,6 +61,12 @@ const Stats = () => {
                   } leading-snug text-white/80`}
                 >
                   {item.text}
+                  {item.live && (
+                    <span
+                      className="ml-2 inline-block w-2 h-2 rounded-full bg-accent animate-pulse align-middle"
+                      title="Live from GitHub (DearJohnLuke + RobustCode-Incorporated)"
+                    />
+                  )}
                 </p>
               </div>
             );
