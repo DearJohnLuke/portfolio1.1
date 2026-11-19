@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
 // Last known figures, shown only if GitHub cannot be reached.
-const FALLBACK = { commits: 1705, projects: 45 };
+const FALLBACK = { commits: 1242, projects: 95, technologies: 52 };
 const POLL_MS = 60_000;
 
-const Stats = ({ initial }) => {
-  const [gh, setGh] = useState(initial || FALLBACK);
+const Stats = () => {
+  const [gh, setGh] = useState(FALLBACK);
 
   // Live: re-read the totals every minute while the page is open.
   useEffect(() => {
@@ -16,10 +16,11 @@ const Stats = ({ initial }) => {
     const load = async () => {
       if (document.hidden) return;
       try {
-        const res = await fetch("/api/github-stats", { cache: "no-store" });
+        const res = await fetch("/api/github-stats");
         if (!res.ok) return;
         const data = await res.json();
-        if (alive && data.commits) setGh({ commits: data.commits, projects: data.projects });
+        if (alive && data.commits)
+          setGh({ commits: data.commits, projects: data.projects, technologies: data.technologies });
       } catch {}
     };
     load();
@@ -33,7 +34,7 @@ const Stats = ({ initial }) => {
   const stats = [
     { num: 7, text: "Years of experience" },
     { num: gh.projects, text: "GitHub projects", live: true },
-    { num: 22, text: "Technologies in production" },
+    { num: gh.technologies, text: "Technologies in production", live: true },
     { num: gh.commits, text: "Code commits", live: true },
   ];
 

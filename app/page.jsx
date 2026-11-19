@@ -5,13 +5,9 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-import { getGithubStats } from "@/lib/github-stats";
 
-// Re-rendered at most every 30 s with fresh GitHub totals.
-export const revalidate = 30;
 
-const Home = async () => {
-  const gh = await getGithubStats().catch(() => null);
+const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -53,7 +49,7 @@ At Hag & Ink, monthly revenue is up 143 % since go-live.
           </div>
         </div>
       </div>
-      <Stats initial={gh && { commits: gh.commits, projects: gh.projects }} />
+      <Stats />
     </section>
   );
 };
