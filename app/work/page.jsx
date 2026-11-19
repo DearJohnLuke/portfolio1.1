@@ -105,7 +105,7 @@ const Work = () => {
               {project.proof?.length > 0 && (
                 <div>
                   <p className="uppercase text-sm tracking-widest text-white/40 mb-2">
-                    Proof
+                    Measured results
                   </p>
                   <ul className="flex flex-col gap-2">
                     {project.proof.map((p, i) => (

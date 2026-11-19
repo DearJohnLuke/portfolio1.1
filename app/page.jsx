@@ -13,14 +13,14 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">AI Engineer | Digital Systems Architect</span>
+            <span className="text-xl">Forward Deployed Engineer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Jean-Luc Luzemba</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-I build LLM agents, GenAI pipelines and SaaS platforms
-and take them to production: specified first, tested,
-deployed and used by real clients in Belgium and DR Congo.
+I embed with the client, turn their problem into software
+and ship it to production: LLM agents, data and SaaS systems.
+At Hag & Ink, monthly revenue is up 143 % since go-live.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

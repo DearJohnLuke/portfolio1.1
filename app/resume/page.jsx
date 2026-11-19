@@ -32,7 +32,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "I design, build and ship production systems end to end: LLM agents and GenAI pipelines, TypeScript/Python backends, PostgreSQL data models, web and mobile apps, cloud deployment and CI/CD. Every project is specified first and proven with automated tests.",
+    "Forward Deployed Engineer: I work on the client's site, map how the business really runs, then design, build and ship the system end to end — LLM agents, TypeScript/Python backends, PostgreSQL, web and mobile, cloud and CI/CD. Every project is specified first, proven with automated tests and judged on measured results.",
   info: [
     {
       fieldName: "Name",
@@ -74,11 +74,11 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Since 2024 I run Robust Code, where we ship AI agents, SaaS products and client platforms to production. Before that: ICT, cybersecurity and support roles in international organisations.",
+    "Since Nov 2024 I run Robust Code: 11 client deployments, +143 % monthly revenue at Hag & Ink since go-live, products shipped in 1 to 2 days. Before that: ICT, cybersecurity and support roles in international organisations.",
   items: [
     {
       company: "Robust Code SARL — LLM agents, GenAI pipelines, SaaS",
-      position: "Founder & AI / Digital Systems Engineer",
+      position: "Founder & Forward Deployed Engineer",
       duration: "2024 - Present",
     },
     {

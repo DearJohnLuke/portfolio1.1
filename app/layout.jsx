@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Jean-Luc Luzemba — AI Engineer & Digital Systems Architect",
-  description: "LLM agents, GenAI pipelines and SaaS platforms in production. Projects, proof and demo videos.",
+  title: "Jean-Luc Luzemba — Forward Deployed Engineer",
+  description: "Forward Deployed Engineer: LLM agents, data and SaaS systems shipped on the client's site, with measured results.",
 };
 
 export default function RootLayout({ children }) {
